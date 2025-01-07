@@ -1,5 +1,4 @@
-import exercicio1.GeradorRelatorioFianceiro;
-import exercicio1.ReportSender;
+package exercicio1;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +6,6 @@ public class Main {
         ReportSender sender = new ReportSender() ;
 
         gerador.gerarRelatorio();
-
         sender.enviarPorEmail();
 
     }
