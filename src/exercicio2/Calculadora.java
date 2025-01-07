@@ -1,6 +1,7 @@
 package exercicio2;
 
 public class Calculadora {
+
     public int calcular(String operacao, int a, int b) {
         switch (operacao) {
             case "soma":
@@ -21,4 +22,5 @@ public class Calculadora {
                 return 0;
         }
     }
+
 }
