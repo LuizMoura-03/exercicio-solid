@@ -13,7 +13,7 @@ public class Main {
             System.out.println("1. - Retangulo");
             System.out.println("2. - Quadrado");
             System.out.println("3. - Triangulo");
-            System.out.println("Digite o numeroda forma: ");
+            System.out.println("Digite o numero da forma: ");
             int escola = scanner.nextInt();
 
             Forma forma = null;
