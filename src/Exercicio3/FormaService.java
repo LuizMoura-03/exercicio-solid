@@ -43,7 +43,7 @@ public class FormaService {
                     System.out.print("Digite a altura do triângulo: ");
                     int alturaTriangulo = scanner.nextInt();
                     forma = new Triangulo(base, alturaTriangulo);
-                    continue;
+                    break;
 
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
