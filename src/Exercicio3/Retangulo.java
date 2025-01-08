@@ -23,6 +23,11 @@ public class Retangulo implements Forma{
     public void setAltura(int altura) {
         this.altura = altura;
     }
+    
+    @Override
+    public int getArea() {
+        return largura * altura;
+    }
 
 }
 
