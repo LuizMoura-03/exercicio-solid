@@ -4,17 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean continuar = true;
-
-
-
-
-
-
-
-
-
+        FormaService formaService = new FormaService();
+        formaService.iniciar();
 
     }
 }
