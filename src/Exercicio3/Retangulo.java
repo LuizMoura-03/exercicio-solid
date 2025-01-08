@@ -4,7 +4,9 @@ public class Retangulo implements Forma{
     protected int largura;
     protected int altura;
 
-    public void Retangulo(int largura, int altura) {
+    public Retangulo() {}
+
+    public  Retangulo(int largura, int altura) {
         this.largura = largura;
         this.altura = altura;
 
