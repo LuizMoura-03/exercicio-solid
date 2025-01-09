@@ -1,14 +1,16 @@
 package bonus;
 
+import java.math.BigDecimal;
+
 public interface Conta {
-    void depositar(double valor);
+    void depositar(BigDecimal valor);
 
-    void sacar(double valor);
+    void sacar(BigDecimal valor);
 
-    void transferir(Conta destino, double valor);
+    BigDecimal calcularTaxa();
 
-    double calcularTaxa();
+    BigDecimal consultarSaldo();
 
-    double consultarSaldo();
-    
+    void transferir(BigDecimal valor, Conta ContaDestino);
+
 }
