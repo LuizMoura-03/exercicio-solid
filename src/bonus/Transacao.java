@@ -9,7 +9,7 @@ public class Transacao {
         this.notificacao = notificacao;
     }
 
-    public void realizarTrasacao(Conta conta, BigDecimal valor, boolean isDeposito) {
+    public void realizarTransacao(Conta conta, BigDecimal valor, boolean isDeposito) {
         if (isDeposito) {
             conta.depositar(valor);
         } else {
