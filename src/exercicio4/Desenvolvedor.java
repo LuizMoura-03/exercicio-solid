@@ -1,4 +1,11 @@
 package exercicio4;
 
-public class Desenvolvedor {
+public class Desenvolvedor implements Funcionario{
+    public void programar() {
+        System.out.println("Programando...");
+    }
+
+    public void atenderCliente() {
+        // Não faz sentido para um desenvolvedor
+    }
 }
