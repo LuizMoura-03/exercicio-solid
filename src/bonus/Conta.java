@@ -11,6 +11,6 @@ public interface Conta {
 
     BigDecimal consultarSaldo();
 
-    void transferir(BigDecimal valor, Conta ContaDestino);
+    void transferir(BigDecimal valor, Conta contaDestino);
 
 }
