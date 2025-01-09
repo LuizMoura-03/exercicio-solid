@@ -1,10 +1,13 @@
 package exercicio5;
-//Código inicial (errado):
 
 public class Computador {
-    private Teclado teclado;
+    private DispositivoEntrada disposito;
 
-    public Computador() {
-        this.teclado = new Teclado();
+    public Computador(DispositivoEntrada disposito) {
+        this.disposito = disposito;
+    }
+
+    public void usarDispositivo() {
+        disposito.usar();
     }
 }
