@@ -15,9 +15,15 @@ public class Transacao {
         } else {
             conta.sacar(valor);
         }
-
         notificacao.enviar("Transacao realizada. Saldo atual: " + conta.consultarSaldo());
 
+    }
+
+    public void realizarTransferencia(Conta contaOrigem, Conta contaDestino, BigDecimal valor) {
+        contaOrigem.transferir(valor, contaDestino);
+        notificacao.enviar("Transferencia realizada. Saldo atual da conta de origem: "
+                + contaOrigem.consultarSaldo());
+        notificacao.enviar("Saldo atual da conta destino: " + contaDestino.consultarSaldo());
     }
 
 }
