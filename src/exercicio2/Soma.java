@@ -1,6 +1,6 @@
 package exercicio2;
 
-public class Soma implements Operacao{
+public class Soma implements Operacao {
 
     @Override
     public int Calculcar(int a, int b) {
