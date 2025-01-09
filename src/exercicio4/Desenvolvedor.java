@@ -1,11 +1,10 @@
 package exercicio4;
 
-public class Desenvolvedor implements Funcionario{
+public class Desenvolvedor implements Programador{
+    
+    @Override
     public void programar() {
         System.out.println("Programando...");
     }
 
-    public void atenderCliente() {
-        // Não faz sentido para um desenvolvedor
-    }
 }
