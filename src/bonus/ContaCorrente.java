@@ -13,8 +13,12 @@ public class ContaCorrente implements Conta {
 
     @Override
     public void sacar(BigDecimal valor) {
-        saldo = saldo.subtract(valor.add(calcularTaxa()));
-
+        BigDecimal taxa = calcularTaxa();
+        if (saldo.compareTo(valor.add(taxa)) >= 0) {
+            saldo = saldo.subtract(valor.add(taxa));
+        } else {
+            System.out.println("Saldo insuficiente!");
+        }
     }
 
     @Override
@@ -29,9 +33,12 @@ public class ContaCorrente implements Conta {
 
     @Override
     public void transferir(BigDecimal valor, Conta contaDestino) {
-        this.sacar(valor);
-        contaDestino.depositar(valor);
-
+        BigDecimal taxa = calcularTaxa();
+        if (saldo.compareTo(valor.add(taxa)) >= 0) {
+            this.sacar(valor); // Retira o valor da conta atual (incluindo a taxa)
+            contaDestino.depositar(valor);
+        } else {
+            System.out.println("Saldo insuficiente para transferencia!");
+        }
     }
-
 }
